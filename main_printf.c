@@ -1,14 +1,10 @@
 #include "main.h"
 
 /**
- * _printf - produces output according to a format
- * @format: format string containing the characters and the specifiers
- * Description: this function will call the get_print() function that will
- * determine which printing function to call depending on the conversion
- * specifiers contained into fmt
- * Return: length of the formatted output string
- * Authors: Ehoneah Obed & Abdulhakeem Badejo
- */
+* _printf - Display char with based on format inputted.
+* @format: format string containing the characters and the specifier.
+* Return: length of the formatted output string
+*/
 int _printf(const char *format, ...)
 {
 	int (*pfunc)(va_list, flags_t *);
